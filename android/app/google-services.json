@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174670559216",
+    "project_id": "demoshopapp-d1108",
+    "storage_bucket": "demoshopapp-d1108.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174670559216:android:061666b722598bf725cf35",
+        "android_client_info": {
+          "package_name": "com.example.demoshopapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174670559216-7kcj6dfl27je4osu4b95vb6k08ls1nkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVyIBbpV9INjTGluhz1y4FkD0P-2JxPkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174670559216-7kcj6dfl27je4osu4b95vb6k08ls1nkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -58,7 +58,7 @@ class _Registerpage extends State<Registerpage> with Validators {
         decoration: const BoxDecoration(
           //color: Colors.red
           image: DecorationImage(
-            image: AssetImage("assets/images/login_bg.png"),
+            image: AssetImage("assets/images/login_bg.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -194,21 +194,15 @@ class _Registerpage extends State<Registerpage> with Validators {
                       padding: const EdgeInsets.fromLTRB(100.0, 0, 8.0, 8.0),
                       child: ElevatedButton(
                           style: ButtonStyle(
+                            shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(18.0),
+                                    side: BorderSide(color: Colors.black))),
                             foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.blue),
-                            overlayColor:
-                                MaterialStateProperty.resolveWith<Color?>(
-                              (Set<MaterialState> states) {
-                                if (states.contains(MaterialState.hovered)) {
-                                  return Colors.blue.withOpacity(0.04);
-                                }
-                                if (states.contains(MaterialState.focused) ||
-                                    states.contains(MaterialState.pressed)) {
-                                  return Colors.blue.withOpacity(0.12);
-                                }
-                                return null; // Defer to the widget's default.
-                              },
-                            ),
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.red),
                           ),
                           onPressed: () {
                             Navigator.pop(context);
@@ -221,19 +215,15 @@ class _Registerpage extends State<Registerpage> with Validators {
                       padding: const EdgeInsets.fromLTRB(30.0, 0.0, 100.0, 8.0),
                       child: ElevatedButton(
                           style: ButtonStyle(
+                            shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(18.0),
+                                    side: BorderSide(color: Colors.black))),
                             foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.blue),
-                            overlayColor:
-                                MaterialStateProperty.resolveWith<Color?>(
-                              (Set<MaterialState> states) {
-                                if (states.contains(MaterialState.hovered))
-                                  return Colors.blue.withOpacity(0.04);
-                                if (states.contains(MaterialState.focused) ||
-                                    states.contains(MaterialState.pressed))
-                                  return Colors.blue.withOpacity(0.12);
-                                return null; // Defer to the widget's default.
-                              },
-                            ),
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.red),
                           ),
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
